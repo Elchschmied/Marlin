@@ -136,7 +136,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender 3 SLH FO"
+#define CUSTOM_MACHINE_NAME "Ender 3 SLH FRO" // sensorless Homing auf X und Y, Filament runout Sensor mit Linearschienen
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1238,7 +1238,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 413.5}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 400}
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1556,7 +1556,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, 0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -43, -10, 0 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
