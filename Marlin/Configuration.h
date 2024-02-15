@@ -691,9 +691,9 @@
     #define DEFAULT_Ki_LIST {   1.38,   1.38 }
     #define DEFAULT_Kd_LIST {  68.38,  68.38 }
   #else
-    #define DEFAULT_Kp  19.41
-    #define DEFAULT_Ki   1.38
-    #define DEFAULT_Kd  68.38
+    #define DEFAULT_Kp  13.45
+    #define DEFAULT_Ki  10.87
+    #define DEFAULT_Kd  51.92
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -781,9 +781,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 481.83
-  #define DEFAULT_bedKi 69.20
-  #define DEFAULT_bedKd 838.75
+  #define DEFAULT_bedKp 232.44
+  #define DEFAULT_bedKi 38.74
+  #define DEFAULT_bedKd 929.77
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1240,7 +1240,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93.02 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 334.2 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
