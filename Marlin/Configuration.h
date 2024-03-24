@@ -61,8 +61,11 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "Ender 3 pro Marlon" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Ender 3 pro Microswiss" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
+//#define SHOW_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
+#define CUSTOM_STATUS_SCREEN_IMAGE
 
 // @section machine
 
@@ -1583,7 +1586,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -10, 0 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
